@@ -210,11 +210,3 @@ add_dependencies(uav_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_
 target_link_libraries(uav_test
   ${catkin_LIBRARIES}
 )
-
-add_executable(mtest
-  src/mtest.cpp
-)
-add_dependencies(mtest ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(mtest
-  ${catkin_LIBRARIES}
-)
